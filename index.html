@@ -2,31 +2,111 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>Tuğkan'ın İlk Web Sitesi</title>
+  <title>Tuğkan Güler | Kişisel Site</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 0 16px;
+      padding: 0 16px 40px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    nav a {
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 24px;
     }
     h1 {
-      text-align: center;
+      margin-bottom: 8px;
     }
-    .card {
-      border: 1px solid #ddd;
-      padding: 16px;
-      border-radius: 8px;
-      margin-top: 24px;
+    h2 {
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>Merhaba Dünya 👋 /br deneme</h1>
-  <div class="card">
-    <p>Bu siteyi <strong>GitHub Pages</strong> kullanarak yayınlıyorum.</p>
-    <p>HTML/CSS öğrenmeye başlamak için gayet güzel bir adım.</p>
-    <p>Daha sonra bu sayfayı düzenleyip tasarımı ve içeriği geliştireceğim.</p>
-  </div>
+  <header>
+    <h1>Tuğkan Güler</h1>
+    <p>Elektrik Mühendisi • Hobi olarak elektronik & web geliştirme</p>
+    <nav>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#projeler">Projeler</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <section id="hakkimda" class="section">
+    <h2>Hakkımda</h2>
+    <p>
+      Merhaba, ben Tuğkan. Rafineri tarafında çalışan bir elektrik mühendisiyim.
+      Boş zamanlarımda elektronik projelerle, web geliştirmeyle ve yeni şeyler
+      öğrenmekle uğraşıyorum.
+    </p>
+    <p>
+      Bu siteyi GitHub Pages kullanarak kendim kodlayarak oluşturdum. 
+      Zamanla hem tasarımını hem de içeriğini geliştirip bir nevi günlük/proje
+      defteri gibi kullanmayı planlıyorum.
+    </p>
+  </section>
+
+  <section id="projeler" class="section">
+    <h2>Projeler</h2>
+    <ul>
+      <li>Basit Arduino projeleri (LED, sensörler vb.)</li>
+      <li>Elektronik öğrenmek için küçük devreler</li>
+      <li>Bu kişisel web sitesi (HTML/CSS ile)</li>
+    </ul>
+    <p>
+      İleride buraya GitHub linkleri, fotoğraflar ve detaylı anlatımlar
+      ekleyebilirim.
+    </p>
+  </section>
+
+  <section id="iletisim" class="section">
+    <h2>İletişim</h2>
+    <p>
+      Şimdilik buraya örnek olarak bir e-posta adresi bırakıyorum:
+    </p>
+    <p>
+      <strong>E-posta:</strong> ornek@example.com
+    </p>
+    <p>
+      İstersen buraya LinkedIn, GitHub, Instagram vs. linklerini de ekleyebilirsin.
+    </p>
+  </section>
+
+  <footer>
+    © <span id="yil"></span> Tuğkan Güler
+  </footer>
+
+  <script>
+    // Altta otomatik yıl yazsın
+    document.getElementById("yil").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
