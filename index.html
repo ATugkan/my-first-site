@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Tuğkan Güler | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Tuğkan Güler</h1>
-    <p>Electrical Engineer • Hobbyist in electronics & web development</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="layout-container">
+    <header class="site-header">
+      <div class="header-content">
+        <h1>Tuğkan Güler</h1>
+        <p class="subtitle">Electrical Engineer • Hobbyist in electronics & web development</p>
+      </div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      Hello, I'm Tuğkan. I work as an electrical engineer in the refinery sector.
-      In my free time, I enjoy working on electronics projects, web development,
-      and learning new things.
-    </p>
-    <p>
-      I created this website myself using GitHub Pages. Over time, I plan to
-      improve both its design and content, using it like a sort of diary/project
-      log.
-    </p>
-  </section>
+    <main>
+      <section id="about" class="card fade-in">
+        <h2>About</h2>
+        <p>
+          Hello, I'm Tuğkan. I work as an electrical engineer in the refinery sector.
+          In my free time, I enjoy working on electronics projects, web development,
+          and learning new things.
+        </p>
+        <p>
+          I created this website myself using GitHub Pages. Over time, I plan to
+          improve both its design and content, using it like a sort of diary/project
+          log.
+        </p>
+      </section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>Simple Arduino projects (LEDs, sensors, etc.)</li>
-      <li>Small circuits for learning electronics</li>
-      <li>This personal website (built with HTML/CSS)</li>
-    </ul>
-    <p>
-      In the future, I may add GitHub links, photos, and detailed explanations here.
-    </p>
-  </section>
+      <section id="projects" class="card fade-in">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li>Simple Arduino projects (LEDs, sensors, etc.)</li>
+          <li>Small circuits for learning electronics</li>
+          <li>This personal website (built with HTML/CSS)</li>
+        </ul>
+        <p class="project-note">
+          In the future, I may add GitHub links, photos, and detailed explanations here.
+        </p>
+      </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>
-      For now, I’m leaving a sample email address here:
-    </p>
-    <p>
-      <strong>Email:</strong> tugkan.guler@gmail.com
-    </p>
-    <p>
-      You can also add links to LinkedIn, GitHub, Instagram, etc.
-    </p>
-  </section>
+      <section id="contact" class="card fade-in">
+        <h2>Contact</h2>
+        <p>
+          For now, I’m leaving a sample email address here:
+        </p>
+        <p class="email-container">
+          <strong>Email:</strong> <a href="mailto:tugkan.guler@gmail.com">tugkan.guler@gmail.com</a>
+        </p>
+        <p>
+          You can also add links to LinkedIn, GitHub, Instagram, etc.
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    © <span id="year"></span> Tuğkan Güler
-  </footer>
+    <footer class="site-footer">
+      © <span id="year"></span> Tuğkan Güler
+    </footer>
+  </div>
 
   <script>
     // Automatically display the current year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
